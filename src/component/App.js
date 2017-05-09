@@ -7,7 +7,7 @@ import OrderHistory from './OrderHistory/OrderHistory.js';
 import ChangeInfo from './ChangeInfo/ChangeInfo.js';
 import Main from './Main/Main.js';
 
-StatusBar.setHidden(true);
+StatusBar.setHidden(true); 
 
 export default class App extends Component {
     render() {

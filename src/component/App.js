@@ -23,9 +23,12 @@ export default class App extends Component {
                     }
                 }}
 
-                // nếu nam = AUTHENTICATION thì chuyển màn hình từ bên phải  qua, còn lại từ bên trái
+                // nếu nam = AUTHENTICATION thì chuyển màn hình từ bên phải  qua,
+                // còn lại từ bên trái
                 configureScene={route => {
-                    if (route.name === 'AUTHENTICATION') return Navigator.SceneConfigs.FloatFromRight;
+                    if (route.name === 'AUTHENTICATION') {
+                        return Navigator.SceneConfigs.FloatFromRight;
+                    }
                     return Navigator.SceneConfigs.FloatFromLeft;
                 }}
             />

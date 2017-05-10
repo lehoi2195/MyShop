@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, StyleSheet, } from 'react-native';
+import Collection from './Collection.js';
+import Category from './Category.js';
 
 class Home extends Component {
     render() {
+        const { wrapper } = styles;
         return (
-            <View style={{ flex: 1, backgroundColor: '#E7442B' }}>
-                <Text> component Home </Text>
+            <View style={wrapper}>
+                <Collection />
+                <Category />
             </View>
             
         );
     }
 }
+
+const styles = StyleSheet.create({
+    wrapper: { flex: 1, backgroundColor: '#DBDBD8' }
+
+});
+
 
 export default Home;

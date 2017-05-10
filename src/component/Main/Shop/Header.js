@@ -22,12 +22,11 @@ class Header extends Component {
                         <Image source={icLogo} style={iconStyle} />
                     </View>
 
-                    {/*text-Input*/}
                     <View>
                         <TextInput 
                             style={textInput}
-                            placeholder=' What do you want buy? '
-                            underlineColorAndroid='#FFF'
+                            placeholder=' What do you want buy?'
+                            underlineColorAndroid='transparent'
                         />
                     </View>
                 </View>
@@ -43,7 +42,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around' 
     },
     row1: { flexDirection: 'row', justifyContent: 'space-between' },
-    textInput: { height: height / 22, backgroundColor: '#FFF', paddingTop: 1.5, paddingLeft: 10 },
+    textInput: { height: height / 20, backgroundColor: '#FFF', paddingTop: 1.5, paddingLeft: 10 },
     titleStyle: { color: '#FFF', fontFamily: 'times new roman', fontSize: 18 },
     iconStyle: { width: 25, height: 25 }
 

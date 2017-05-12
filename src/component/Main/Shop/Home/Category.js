@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, Image, TouchableOpacity, } from 'react-native';
 import Swiper from 'react-native-swiper';
 
 import lilterIcon from '../../../../Media/temp/little.jpg';
@@ -13,6 +13,12 @@ import partyIcon from '../../../../Media/temp/party.jpg';
 const { height, width } = Dimensions.get('window');
 
 export default class Category extends Component {
+
+    goToListProduct() {
+        const { navigator } = this.props;
+        navigator.push({ name: 'LIST_PRODUCT' });
+    }
+
     render() {
         const { wrapper, styleText, styleImage, textImagaCate, } = styles;
         return (
@@ -23,25 +29,37 @@ export default class Category extends Component {
 
                 <View style={{ flex: 4, }}>
                     <Swiper showsPagination width={widthImage} height={heightImage} >
-                        <Image source={lilterIcon} style={styleImage} >
-                            <Text style={textImagaCate}> Litter Dress</Text>
-                        </Image>
+                        <TouchableOpacity onPress={this.goToListProduct.bind(this)} >
+                            <Image source={lilterIcon} style={styleImage} >
+                                <Text style={textImagaCate}> Litter Dress</Text>
+                            </Image>
+                         </TouchableOpacity>
                             
-                        <Image source={maxiIcon} style={styleImage} >
-                            <Text style={textImagaCate}> Maxi Dress</Text>
-                        </Image>
 
-                        <Image source={midiIcon} style={styleImage} >
-                            <Text style={textImagaCate}> Midi Dress</Text>
-                        </Image>
+                        <TouchableOpacity onPress={this.goToListProduct.bind(this)} >
+                            <Image source={maxiIcon} style={styleImage} >
+                                <Text style={textImagaCate}> Maxi Dress</Text>
+                            </Image>
+                        </TouchableOpacity>
 
-                        <Image source={miniIcon} style={styleImage} >
-                            <Text style={textImagaCate}> Mini Dress</Text>
-                        </Image>
+                        <TouchableOpacity onPress={this.goToListProduct.bind(this)} >
+                            <Image source={midiIcon} style={styleImage} >
+                                <Text style={textImagaCate}> Midi Dress</Text>
+                            </Image>
+                        </TouchableOpacity>
 
-                        <Image source={partyIcon} style={styleImage} >
-                            <Text style={textImagaCate}> Party Dress</Text>
-                        </Image>
+
+                        <TouchableOpacity onPress={this.goToListProduct.bind(this)} >
+                            <Image source={miniIcon} style={styleImage} >
+                                <Text style={textImagaCate}> Mini Dress</Text>
+                            </Image>
+                        </TouchableOpacity>
+                        
+                        <TouchableOpacity onPress={this.goToListProduct.bind(this)} >
+                            <Image source={partyIcon} style={styleImage} >
+                                <Text style={textImagaCate}> Party Dress</Text>
+                            </Image>
+                        </TouchableOpacity>
                     </Swiper>
                 </View>
             </View>

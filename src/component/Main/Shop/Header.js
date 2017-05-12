@@ -41,10 +41,24 @@ const styles = StyleSheet.create({
         padding: 10, 
         justifyContent: 'space-around' 
     },
-    row1: { flexDirection: 'row', justifyContent: 'space-between' },
-    textInput: { height: height / 20, backgroundColor: '#FFF', paddingTop: 1.5, paddingLeft: 10 },
-    titleStyle: { color: '#FFF', fontFamily: 'times new roman', fontSize: 18 },
-    iconStyle: { width: 25, height: 25 }
+    row1: { 
+        flexDirection: 'row', 
+        justifyContent: 'space-between' 
+    },
+    textInput: { 
+        height: height / 20, 
+        backgroundColor: '#FFF', 
+        paddingVertical: 0,
+    },
+    titleStyle: { 
+        color: '#FFF', 
+        fontFamily: 'times new roman', 
+        fontSize: 18 
+    },
+    iconStyle: { 
+        width: 25, 
+        height: 25 
+    }
 
 });
 

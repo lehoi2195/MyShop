@@ -7,14 +7,14 @@ import Cart from './Cart/Cart.js';
 import Search from './Search/Search.js';
 import Header from './Header.js';
 
-import icHomeS from '../../../Media/appIcon/home0.png';
-import icHome from '../../../Media/appIcon/home.png';
-import icCartS from '../../../Media/appIcon/cart0.png';
-import icCart from '../../../Media/appIcon/cart.png';
-import icSearchS from '../../../Media/appIcon/search0.png';
-import icSearch from '../../../Media/appIcon/search.png';
-import icContactS from '../../../Media/appIcon/contact0.png';
-import icContact from '../../../Media/appIcon/contact.png';
+import icHome from '../../../Media/appIcon/home0.png';
+import icHomeS from '../../../Media/appIcon/home.png';
+import icCartS from '../../../Media/appIcon/cart.png';
+import icCart from '../../../Media/appIcon/cart0.png';
+import icSearch from '../../../Media/appIcon/search0.png';
+import icSearchS from '../../../Media/appIcon/search.png';
+import icContact from '../../../Media/appIcon/contact0.png';
+import icContactS from '../../../Media/appIcon/contact.png';
 
 
 class Shop extends Component {
@@ -43,8 +43,8 @@ class Shop extends Component {
                     <TabNavigator.Item
                         selected={this.state.selectedTab === 'home'}
                         title="Home"
-                        renderIcon={() => <Image source={icHomeS} style={styleIcon} />}
-                        renderSelectedIcon={() => <Image source={icHome} style={styleIcon} />}
+                        renderIcon={() => <Image source={icHome} style={styleIcon} />}
+                        renderSelectedIcon={() => <Image source={icHomeS} style={styleIcon} />}
                         selectedTitleStyle={{ color: '#34B089' }}
 
                         onPress={() => this.setState({ selectedTab: 'home' })}
@@ -55,8 +55,8 @@ class Shop extends Component {
                     <TabNavigator.Item
                         selected={this.state.selectedTab === 'cart'}
                         title="Cart"
-                        renderIcon={() => <Image source={icCartS} style={styleIcon} />}
-                        renderSelectedIcon={() => <Image source={icCart} style={styleIcon} />}
+                        renderIcon={() => <Image source={icCart} style={styleIcon} />}
+                        renderSelectedIcon={() => <Image source={icCartS} style={styleIcon} />}
                         badgeText="1"
                         onPress={() => this.setState({ selectedTab: 'cart' })}
                         selectedTitleStyle={{ color: '#34B089' }}
@@ -67,8 +67,8 @@ class Shop extends Component {
                     <TabNavigator.Item
                         selected={this.state.selectedTab === 'search'}
                         title="Search"
-                        renderIcon={() => <Image source={icSearchS} style={styleIcon} />}
-                        renderSelectedIcon={() => <Image source={icSearch} style={styleIcon} />}
+                        renderIcon={() => <Image source={icSearch} style={styleIcon} />}
+                        renderSelectedIcon={() => <Image source={icSearchS} style={styleIcon} />}
                         onPress={() => this.setState({ selectedTab: 'search' })}
                         selectedTitleStyle={{ color: '#34B089' }}
                     >
@@ -78,8 +78,8 @@ class Shop extends Component {
                     <TabNavigator.Item
                         selected={this.state.selectedTab === 'contact'}
                         title="Contact"
-                        renderIcon={() => <Image source={icContactS} style={styleIcon} />}
-                        renderSelectedIcon={() => <Image source={icContact} style={styleIcon} />}
+                        renderIcon={() => <Image source={icContact} style={styleIcon} />}
+                        renderSelectedIcon={() => <Image source={icContactS} style={styleIcon} />}
                         onPress={() => this.setState({ selectedTab: 'contact' })}
                         selectedTitleStyle={{ color: '#34B089' }}
                     >

@@ -7,11 +7,13 @@ import OrderHistory from './OrderHistory/OrderHistory.js';
 import ChangeInfo from './ChangeInfo/ChangeInfo.js';
 import Main from './Main/Main.js';
 
-StatusBar.setHidden(true); 
+StatusBar.setHidden(false); 
+StatusBar.setBackgroundColor('#2E9E7B');
+StatusBar.setBarStyle('light-content');
 
 export default class App extends Component {
     render() {
-        return (
+        return (            
             <Navigator
                 initialRoute={{ name: 'MAIN' }}     // màn hình đc chạy đầu tiên
                 renderScene={(route, navigator) => {

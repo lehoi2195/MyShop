@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
 
-import map from '../../../../Media/appIcon/map.png';
+import map from '../../../../Media/appIcon/m.png';
 import phoneIcon from '../../../../Media/appIcon/phone.png';
 import mailIcon from '../../../../Media/appIcon/mail.png';
 import messageIcon from '../../../../Media/appIcon/message.png';
@@ -23,19 +23,19 @@ class Contact extends Component {
                 <View style={infoContainer}>
                     <View style={rowInfoContainer}>
                         <Image source={locationIcon} style={imageStyle} />
-                        <Text style={infoText}>90 Le Thi Rieng/ Ben Thanh Dist</Text>
+                        <Text style={infoText}>Phương Mai- Hai Bà Trưng - Hà Nội</Text>
                     </View>
                     <View style={rowInfoContainer}>
                         <Image source={phoneIcon} style={imageStyle} />
-                        <Text style={infoText}>(+84) 01694472176</Text>
+                        <Text style={infoText}>(+84)902-2727 43</Text>
                     </View>
                     <View style={rowInfoContainer}>
                         <Image source={mailIcon} style={imageStyle} />
-                        <Text style={infoText}>khoaphamtraining@gmail.com</Text>
+                        <Text style={infoText}>thuhuong96@gmail.com</Text>
                     </View>
                     <View style={[rowInfoContainer, { borderBottomWidth: 0 }]}>
                         <Image source={messageIcon} style={imageStyle} />
-                        <Text style={infoText}>(+84) 09877067707</Text>
+                        <Text style={infoText}>(+84)9877067707</Text>
                     </View>
                 </View>
             </View>

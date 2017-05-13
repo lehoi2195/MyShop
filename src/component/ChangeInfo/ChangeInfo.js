@@ -9,9 +9,9 @@ export default class ChangeInfo extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            txtName: 'Nguyen Van Pho', 
-            txtAddress: '92 Le Thi Rieng / Ben Thanh', 
-            txtPhone: '01694472176' 
+            txtName: 'Phùng Thị Thu Hương', 
+            txtAddress: 'Phương Mai- Hai Bà Trưng - Hà Nội', 
+            txtPhone: '+902 2727 43' 
         };
     }
     goBackToMain() {
